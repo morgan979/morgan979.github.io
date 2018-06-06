@@ -7,8 +7,6 @@ header .row,
 footer .row {
   display: flex;
   align-items: center;
-  font-size: 15px;
-
 }
 header nav {
   display: flex;
@@ -26,8 +24,10 @@ header a:hover {
 }
 
 footer {
-  /*color: white;*/
-  font-size: 15px;
+  padding: 80px 0 100px 0;
+  color: white;
+  font-size: 18px;
+  background-color: #0fb2b4;
 }
 
 /* ---------------- Intro ------------------*/
@@ -62,6 +62,46 @@ footer {
   background-image: url("images/chicago.jpg");
 }
 
+/*---cs---*/
+.brainpoints {
+  background-image: url("images/brainpoints/bwwomen.jpg");
+}
+
+.cambly {
+  background-image: url("images/cambly/bwcambly.png");
+}
+
+.mobilehealth {
+  background-image: url("images/mobilehealth/bweric.jpg");
+}
+
+.bmeg {
+  background-image: url("images/bmeg/bwbuildings.jpg");
+}
+
+/*---design---*/
+.alphandle {
+  background-image: url("images/bwalphandlecadrender.png");
+}
+
+.cognitivebiastrainingmodule {
+  background-image: url("images/cognitivebiastrainingmodule/bwshannon.png");
+}
+
+.industrial-design {
+  background-image: url("images/industrialdesign/bwfireplace16.png");
+}
+
+/*---art---*/
+.tidakuntukjual {
+  background-image: url("images/tidakuntukjual/bwporch.jpg");
+}
+
+.creative-hobbies {
+  background-image: url("images/creativehobbies/bwlatournette.jpg");
+}
+
+
 .heading-box {
   max-width: 700px;
   padding: 80px 0 80px 0;
@@ -76,6 +116,12 @@ h1.name {
   padding-bottom: 10px;
   border-bottom: 2px solid #0fb2b4;
   font-size: 70px;
+}
+
+h3.tagline {
+  max-width: 550px;
+  margin: auto;
+  padding-top: 20px;
 }
 
 /* ---------------- General Formatting ------------------*/
@@ -95,6 +141,7 @@ h1.name {
 
 .info-main {
   padding: 40px 0px 80px 0px;
+  min-height: 500px
 }
 
 .lightgrey {
@@ -107,6 +154,10 @@ h1.name {
 
 .bluegrey {
   background:   #708090;
+}
+
+.white {
+  background: white;
 }
 /* ---------------- Hexagonal Grid ------------------*/
 
@@ -172,6 +223,7 @@ h1.name {
     margin-left: 2.5%;
 }
 /*Hexagonal Images*/
+
 #grid li .hexagon img {
   left:-100%;
   right:-100%;
@@ -185,6 +237,15 @@ h1.name {
   transition: all 0.6s linear 0s;
 }
 
+#grid li .hexagon img.cambly {
+  height:130%;
+  -o-transform: translateZ(0) translateX(-20%) translateY(-10%);
+  -moz-transform: translateZ(0) translateX(-20%) translateY(-10%);
+  -webkit-transform: translateZ(0) translateX(-20%) translateY(-10%);
+  -ms-transform: translateZ(0) translateX(-20%) translateY(-10%);
+  transform: translateZ(0) translateX(-20%) translateY(-10%);
+}
+
 #grid li:hover img {
   height: 150%;
   -o-transform: translateZ(0) translateX(-25%);
@@ -192,6 +253,15 @@ h1.name {
   -webkit-transform: translateZ(0) translateX(-25%);
   -ms-transform: translateZ(0) translateX(-25%);
   transform: translateZ(0) translateX(-25%);
+}
+
+#grid li:hover img.cambly {
+  height:180%;
+  -o-transform: translateZ(0) translateX(-40%) translateY(-10%);
+  -moz-transform: translateZ(0) translateX(-40%) translateY(-10%);
+  -webkit-transform: translateZ(0) translateX(-40%) translateY(-10%);
+  -ms-transform: translateZ(0) translateX(-40%) translateY(-10%);
+  transform: translateZ(0) translateX(-40%) translateY(-10%);
 }
 
 /*Hexagonal Text*/
@@ -214,7 +284,7 @@ h1.name {
 }
 
 #grid li .hexagon .hexagon-medium-font {
-  /*font-size: 18px;*/
+  font-size: 18px;
   font-size: 1.4vw;
   color: white;
   /*visibility: hidden;*/
@@ -255,15 +325,40 @@ h1.name {
 }
 
 #grid li .cs {
-  background: rgba(191,191,191,0.6);
+  background: rgba(191,191,191,0.9);
 }
 
 #grid li .dsgn {
-  background: rgba(15, 178, 180, 0.6);
+  background: rgba(15, 178, 180, 0.9);
 }
 
 #grid li .art {
-  background: rgba(112,128,144, 0.6);
+  background: rgba(112,128,144, 0.9);
+}
+
+
+#grid li:hover .cs {
+  background: rgba(191,191,191,0.4);
+}
+
+#grid li:hover .dsgn {
+  background: rgba(15, 178, 180, 0.4);
+}
+
+#grid li:hover .art {
+  background: rgba(112,128,144, 0.4);
+}
+
+#grid li.contact:hover .cs {
+  background: rgba(191,191,191, 1);
+}
+
+#grid li.contact:hover .dsgn {
+  background: rgba(15, 178, 180, 1);
+}
+
+#grid li.contact:hover .art {
+  background: rgba(112,128,144, 1);
 }
 
 /* ---------------- About Me ------------------*/
@@ -271,20 +366,56 @@ h1.name {
   max-width: 700px;
   margin: auto;
   padding-top: 20px;
+  font-size: 18px;
 }
 
 .lifestyle {
   padding-top: 80px;
 }
 
+#grid li.aboutme:hover img {
+  height:100%;
+  -o-transform: translateZ(0) translateX(0);
+  -moz-transform: translateZ(0) translateX(0);
+  -webkit-transform: translateZ(0) translateX(0);
+  -ms-transform: translateZ(0) translateX(0);
+  transform: translateZ(0) translateX(0);
+}
+
+/* ---------------- Contact ------------------*/
+/*Hexagonal Images*/
+#grid li.contact .hexagon img {
+  left:50%;
+  right:50%;
+  height:70%;
+  /*width: auto;*/
+  /*margin: 0 auto;*/
+  -o-transform: translateZ(0) translateX(13%) translateY(20%);
+  -moz-transform: translateZ(0) translateX(13%) translateY(20%);
+  -webkit-transform: translateZ(0) translateX(13%) translateY(20%);
+  -ms-transform: translateZ(0) translateX(13%) translateY(20%);
+  transform: translateZ(0) translateX(13%) translateY(20%);
+}
+
+#grid li.contact:hover img {
+  height: 100%;
+  -o-transform: translateZ(0) translateX(-7%) translateY(20%);
+  -moz-transform: translateZ(0) translateX(-7%) translateY(20%);
+  -webkit-transform: translateZ(0) translateX(-7%) translateY(20%);
+  -ms-transform: translateZ(0) translateX(-7%) translateY(20%);
+  transform: translateZ(0) translateX(-7%) translateY(20%);
+}
+
+#contact #grid {
+  padding-top: 80px;
+}
+
+.contact {
+  font-size: 18px;
+}
 /* ---------------- Projects ------------------*/
 .info-project {
   padding: 100px;
-/*  padding-left: 300px;
-  padding-right: 300px;*/
-  /*padding: 40px 40px 80px 40px;*/
-  /*min-width: 600px;*/
-  /*background: #DCDCDC;*/
 }
 
 .info-project h5 {
@@ -299,8 +430,6 @@ ul.project-images li {
   width: 15%;
 }
 ul.project-images img {
-/*  max-width: 300px;
-  max-height: 300px;*/
   width: 700%;
   margin: 10px;
 }
@@ -319,13 +448,19 @@ ul.project-bullets {
 
 .project-title {
   max-width: 700px;
+  max-height: 350px;
   padding: 80px 20px 80px 20px;
   margin: auto;
   background-color: rgba(191,191,191,0.9);
 }
 
+.project-title h1 {
+  max-width: 550px;
+}
+
 .project-skills {
   max-width: 700px;
+  max-height: 130px;
   padding: 10px 0 50px 0;
   margin: 20px auto;
   background-color: rgba(191,191,191,0.9);
@@ -359,5 +494,32 @@ button.projects {
 .button a:hover {
   text-decoration: none;
   color: #000000;
+}
+
+
+/* ---------------- Pages of photos ------------------*/
+.photo-grid {
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+
+.photos {
+  width: 57%;
+  margin: 0 auto;
+  /* Prevent vertical gaps */
+  line-height: 0;   
+  -webkit-column-count: 2;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    2;
+  -moz-column-gap:      0px;
+  column-count:         2;
+  column-gap:           0px;  
+}
+
+.photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+  padding: 15px;
 }
 

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+</head>
+<body>
+
+	<section>
+		<div  class="project-banner mobilehealth">
+			<header>
+			    <div class="row">
+			      <a class="col-sm-8" href="index.html">MW</a>
+			      <nav class="col-sm-4 text-right">
+			        <a href="index.html#projects">Projects</a>
+			        <a href="index.html#about">About</a>
+			        <a href="index.html#contact">Contact</a>
+			      </nav>
+			    </div>
+			</header>
+			<div class="project-title text-center">
+				<h1 class="name colored-header">Mobile Health</h1>
+				<h3 class="tagline">Identifying depression from phone sensor data</h3>
+			</div>
+			<div class="project-skills text-center">
+				<h3 class="blue-underline centered">Skills</h3>
+				<div class="row skills">
+					<div class='col-sm-4'>Machine Learning</div>
+					<div class='col-sm-4'>Weka</div>
+					<div class='col-sm-4'>Python</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="info-project grey-background">
+		<div class="row">
+			<div class='description col-sm-6'>
+				<h3 class="blue-underline">Problem and Opportunity</h3>
+				<h5>People's depressive symptoms may be less prominent at work</h5>
+				<ul class="project-bullets">
+					<li>Researchers were attempting to establish effective anti-depression intervention strategies for individuals while at work</li>
+					<li>Analyzing phone sensor data has the potential to automatically detect if an individual is at work and respond accordingly</li>
+				</ul>
+				<h3 class="blue-underline">Our Work</h3>
+				<h5>Applied machine learning techniques to phone sensor data from the Feinberg School of Medecine</h5>
+				<ul class="project-bullets">
+					<li>Familiarized ourselves with the phone sensor data from 207 participants</li>
+					<li>Cleaned and normalized the data using a python script</li>
+					<li>Created 129 features to identify the workday label using python scripts</li>
+					<li>Used Weka to compare the accuracies of different classifiers</li>
+				</ul>
+				<h3 class="blue-underline">Results and Future Work</h3>
+				<h5>Correlation between phone sensor data and workday</h5>
+				<ul class="project-bullets">
+					<li>Analyzed the accuracy, ROC area, F-measure, precision, and recall to find the set of data that best predicted workday versus non-workday</li>
+					<li>Random forest classifier with 150 trees consistently reported the highest accuracy</li>
+					<li>In the future, identify a label in addition to workday that may be linked to depression, such as the amount of time spent at home</li>
+					<li>Creating another study to gather less biased phone sensor data may improve the ability to determine depression</li>
+				</ul>
+			</div>
+			<div class="project-images-container">
+				<div class="photos col-sm-6">
+					<img src="images/mobilehealth/eric2.jpg">
+				</div>
+				
+			</div>
+		</div>
+		<div class="button">
+			<a href="index.html#projects">
+				<button class="projects" onclick="index.html#projects">More Projects</button>
+			</a>
+		</div>
+	</section>
+
+	<footer class="text-center" id="contact">
+		<h3>Interested in talking?</h3>
+		<div>morgan979@gmail.com</div>
+	</footer>
+</body>
+</html>
