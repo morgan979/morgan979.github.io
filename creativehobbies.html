@@ -35,22 +35,93 @@
 		</div>
 	</section>
 
+
 	<section class="photo-grid grey-background" >
 		<div class="photos">
-			<img id="myImg" src="images/creativehobbies/latournette.jpg">
-			<img class="myImg" src="images/creativehobbies/angela.jpg">
-			<img src="images/creativehobbies/elephants.jpg">
-			<img src="images/creativehobbies/boats.jpg">
-			<img src="images/creativehobbies/oceancliffs.jpg">
-			<img src="images/creativehobbies/lanadelray.jpg">
-			<img src="images/creativehobbies/cat.jpg">
-			<img src="images/creativehobbies/iceland.jpg">
-			<img src="images/creativehobbies/baliwoman.jpg">
-			<img src="images/creativehobbies/boyinocean.jpg">
-			<img src="images/creativehobbies/umbrella.jpg">
-			<img src="images/creativehobbies/woman.jpg">
-			<img src="images/creativehobbies/wolf.jpg">
+			<img src="images/creativehobbies/latournette.jpg" onclick="openModal();currentSlide(1)">
+			<img src="images/creativehobbies/angela.jpg" onclick="openModal();currentSlide(2)">
+			<img src="images/creativehobbies/elephants.jpg" onclick="openModal();currentSlide(3)">
+			<img src="images/creativehobbies/boats.jpg" onclick="openModal();currentSlide(4)">
+			<img src="images/creativehobbies/oceancliffs.jpg" onclick="openModal();currentSlide(5)">
+			<img src="images/creativehobbies/lanadelray.jpg" onclick="openModal();currentSlide(6)">
+			<img src="images/creativehobbies/cat.jpg" onclick="openModal();currentSlide(7)">
+			<img src="images/creativehobbies/iceland.jpg" onclick="openModal();currentSlide(8)">
+			<img src="images/creativehobbies/baliwoman.jpg" onclick="openModal();currentSlide(9)">
+			<img src="images/creativehobbies/boyinocean.jpg" onclick="openModal();currentSlide(10)">
+			<img src="images/creativehobbies/umbrella.jpg" onclick="openModal();currentSlide(11)">
+			<img src="images/creativehobbies/woman.jpg" onclick="openModal();currentSlide(12)">
+			<img src="images/creativehobbies/wolf.jpg" onclick="openModal();currentSlide(13)">
 		</div>
+
+
+		
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+			<!-- The Close Button -->
+			<span class="close" onclick="closeModal()">&times;</span>
+
+			<div class="mySlides">
+				<img class="modal-content" src="images/creativehobbies/latournette.jpg" style="width:100%">
+				<!-- <div id="caption">Alps in Annecy, France</div> -->
+		    </div>
+
+		    <div class="mySlides">
+		    	<img class="modal-content" src="images/creativehobbies/angela.jpg" style="width:100%">
+		    </div>
+
+		    <div class="mySlides">
+		    	<img class="modal-content" src="images/creativehobbies/elephants.jpg" style="width:100%">
+		    </div>
+
+		    <div class="mySlides">
+		    	<img class="modal-content" src="images/creativehobbies/boats.jpg" style="width:100%">
+		    </div>
+
+		    <div class="mySlides">
+				<img class="modal-content" src="images/creativehobbies/oceancliffs.jpg" style="width:100%">
+		    </div>
+
+		    <div class="mySlides">
+		    	<img class="modal-content" src="images/creativehobbies/lanadelray.jpg" style="width:100%">
+		    </div>
+
+		    <div class="mySlides">
+		    	<img class="modal-content" src="images/creativehobbies/cat.jpg" style="width:100%">
+		    </div>
+
+		    <div class="mySlides">
+		    	<img class="modal-content" src="images/creativehobbies/iceland.jpg" style="width:100%">
+		    </div>
+
+		    <div class="mySlides">
+		    	<img class="modal-content" src="images/creativehobbies/baliwoman.jpg" style="width:100%">
+		    </div>
+
+		    <div class="mySlides">
+				<img class="modal-content" src="images/creativehobbies/boyinocean.jpg" style="width:100%">
+		    </div>
+
+		    <div class="mySlides">
+		    	<img class="modal-content" src="images/creativehobbies/umbrella.jpg" style="width:100%">
+		    </div>
+
+		    <div class="mySlides">
+		    	<img class="modal-content" src="images/creativehobbies/woman.jpg" style="width:100%">
+		    </div>
+
+		    <div class="mySlides">
+		    	<img class="modal-content" src="images/creativehobbies/wolf.jpg" style="width:100%">
+		    </div>
+
+		    <!-- Next/previous controls -->
+		    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		</div>
+		<script src="script.js"></script>
+
+
+
 
 		<div class="button">
 			<a href="index.html#projects">

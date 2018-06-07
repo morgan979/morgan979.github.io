@@ -4,6 +4,7 @@
 	<meta charset="utf-8"/>
 	<link rel="stylesheet" type="text/css" href="styles.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+	
 </head>
 <body>
 
@@ -58,14 +59,38 @@
 					<li><a href="https://github.com/NUDelta/brain-points">Github Link</a></li>
 				</ul>
 			</div>
+			
 			<div class="project-images-container">
-				<div class="photos col-sm-6">
-					<img src="images/brainpoints/growthmindset.jpg">
-					<img src="images/brainpoints/ideas.png">
-					<img src="images/brainpoints/survey.png">
-					<img src="images/brainpoints/researchquestions.png">
+				<div class="col-sm-6">
+					<div class="slide-photos">
+						<div class="mySlides">
+							<img class="project-image" src="images/brainpoints/growthmindset.jpg">
+							<div class="caption">Online Code Editor we designed for Research Studies</div>
+						</div>
+						<div class="mySlides">
+							<img class="project-image" src="images/brainpoints/ideas.png">
+							<div class="caption">Brainstorm of Code Editor Interface</div>
+						</div>
+						<div class="mySlides">
+							<img class="project-image" src="images/brainpoints/survey.png">
+							<div class="caption">Post Study Survey</div>
+						</div>
+						<div class="mySlides">
+							<img class="project-image" src="images/brainpoints/researchquestions.png">
+							<div class="caption">Research Questions</div>
+						</div>
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(+1)">&#10095;</a>
+					</div>
+				</div>
+				<div style="text-align:center">
+					<span class="dot" onclick="currentSlide(1)"></span> 
+					<span class="dot" onclick="currentSlide(2)"></span> 
+					<span class="dot" onclick="currentSlide(3)"></span>
+					<span class="dot" onclick="currentSlide(4)"></span>  
 				</div>
 			</div>
+			<script language="JavaScript" type="text/javascript" src="script.js"></script>
 		</div>
 		<div class="button">
 			<a href="index.html#projects">

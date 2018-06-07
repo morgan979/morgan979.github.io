@@ -62,14 +62,34 @@
 					<li><a href="https://www.cambly.com/english?lang=en">Cambly Website</a></li>
 				</ul>
 			</div>
+
+
 			<div class="project-images-container">
-				<div class="photos col-sm-6">
-					<img src="images/cambly/tutors.jpg">
-					<img src="images/cambly/videocall.jpg">
-					<img src="images/cambly/learnenglish.jpg">		
+				<div class="col-sm-6">
+					<div class="slide-photos">
+						<div class="mySlides">
+							<img class="project-image" src="images/cambly/learnenglish.jpg">
+							<div class="caption">Cambly home page (image source: Cambly)</div>
+						</div>
+						<div class="mySlides">
+							<img class="project-image" src="images/cambly/videocall.jpg">
+							<div class="caption">Video call between a student and tutor (image source: Cambly)</div>
+						</div>
+						<div class="mySlides">
+							<img class="project-image" src="images/cambly/tutors.jpg">
+							<div class="caption">Page to find an available tutor (image source: Cambly)</div>
+						</div>
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(+1)">&#10095;</a>
+					</div>
 				</div>
-				
+				<div style="text-align:center">
+					<span class="dot" onclick="currentSlide(1)"></span> 
+					<span class="dot" onclick="currentSlide(2)"></span> 
+					<span class="dot" onclick="currentSlide(3)"></span>
+				</div>
 			</div>
+
 		</div>
 		<div class="button">
 			<a href="index.html#projects">
@@ -82,5 +102,7 @@
 		<h3>Interested in talking?</h3>
 		<div>morgan979@gmail.com</div>
 	</footer>
+
+	<script language="JavaScript" type="text/javascript" src="script.js"></script>
 </body>
 </html>
