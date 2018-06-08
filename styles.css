@@ -45,6 +45,15 @@ footer {
   border-bottom: 2px solid #0fb2b4;
 }
 
+.project-banner-caption {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 12px 30px;
+  background-color: rgba(0,0,0,.6);
+  color: white;
+}
+
 .california {
   background-image: url("images/california.jpg");
 }
